@@ -1,0 +1,249 @@
+@font-face {
+    font-family: 'Trade Gothic';
+    src: url('../fonts/TradeGothicLTStd-BdCn20.eot');
+    src: url('../fonts/TradeGothicLTStd-BdCn20.eot?#iefix') format('embedded-opentype'), url('../fonts/TradeGothicLTStd-BdCn20.woff2') format('woff2'), url('../fonts/TradeGothicLTStd-BdCn20.woff') format('woff'), url('../fonts/TradeGothicLTStd-BdCn20.svg#TradeGothicLTStd-BdCn20') format('svg');
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: condensed;
+    unicode-range: U+0020-00FE;
+}
+
+h1 {
+    font-family: 'Trade Gothic', sans-serif;
+    font-size: 27px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 8px 0;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica,Arial ,sans-serif;
+  font-size: 12px;
+  -webkit-print-color-adjust: exact !important;
+  margin: 0;
+}
+
+.row:first-child {
+  margin-top: 0;
+}
+
+::-webkit-input-placeholder {
+  color:transparent;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color:transparent;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color:transparent;
+}
+
+:-ms-input-placeholder {
+   color:transparent;
+}
+
+h1 {
+  font-size: 20px;
+  color: #444;
+  background-color: #EEE;
+  margin-top: 0;
+  border-bottom: 1px solid #444;
+}
+
+h1 span {
+  color: #444;
+}
+
+form .row {
+  overflow: hidden;
+  margin-top: 0;
+}
+
+.form-container {
+  width: 850px;
+  margin: 0 auto;
+}
+
+form .row .text-col {
+  float: left;
+}
+
+.text-col .form-group input {
+  margin-right: 10px;
+}
+
+.checkbox {
+  position: relative;
+  margin-top: 10px;
+  float: left;
+}
+
+.checkbox:before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left: 20px;
+  top: 5px;
+  border: 1px solid #000;
+}
+
+/* course boxes */
+
+.course {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.courses .col-height {
+  display: block;
+}
+
+.courses .add-course-button-container {
+  display: none;
+}
+
+.assignment-form .course .header-cell {
+  width: 100%;
+}
+
+.course .input-cell {
+  border-right: none;
+  border-bottom: 1px solid #000;
+}
+
+.course .col-md-2,
+.course .col-md-4 {
+  float: left;
+}
+
+.course .header-cell.last-cell {
+  height: auto;
+}
+
+.course .cell {
+  height: 30px;
+}
+
+.course .header-cell {
+  height: auto;
+  padding: 0;
+}
+
+.course .input-cell,
+.course .input-cell.last-cell.checkbox-inline {
+  padding: 0;
+}
+
+.course .input-cell input[type="text"] {
+  display: none;
+}
+
+.course .input-cell.last-cell {
+  height: 30px;
+}
+
+.course-decline .checkbox {
+  margin-top: 0;
+}
+
+.course-decline .checkbox:before {
+  top: 7px;
+  left: calc(50% - 12px);
+}
+
+/* signature and footer */
+.submit-row {
+  margin-top: 20px;
+}
+
+.signature-row {
+  margin: 20px 0 20px;
+  overflow: hidden;
+}
+
+.signature-row div {
+  float: left;
+}
+
+.signature-row .signature-cell,
+.signature-row .date-cell {
+  display: flex;
+}
+
+.signature-row .signature-cell {
+  width: 70%;
+}
+
+.signature-row .date-cell {
+  width: 30%;
+}
+
+.signature-row .underlined {
+  flex: 1;
+  margin: 0 10px;
+  border-bottom: 1px solid #000;
+}
+
+.contact {
+  padding: 0;
+}
+
+.contact div {
+  float: left;
+  width: 50%;
+}
+
+/* utility */
+.hide-for-print {
+  display: none;
+}
+
+div.hide-for-screen {
+  display: block;
+}
+
+span.hide-for-screen,
+.form-g span.hide-for-screen {
+  display: inline;
+  margin: 0;
+}
+
+h1 .hide-for-screen {
+  display: inline;
+}
+
+form {
+  margin: 0 auto 130px auto;
+}
+
+.form-control,
+.form-control:focus,
+.has-error .form-control,
+.has-error .form-control:focus,
+.fill-width {
+  height: 20px;
+}
+
+hr {
+  clear: both;
+}
+
+.help-block {
+  display: none;
+}
+
+.contact-row {
+  margin-top: -20px;
+  padding: 5px;
+}
+
+.contact-row p {
+  margin: 5px 0;
+  text-align: center;
+}
+
+p.footer {
+  display: none;
+}

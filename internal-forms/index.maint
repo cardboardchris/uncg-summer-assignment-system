@@ -1,0 +1,14 @@
+<<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+<head>
+    <title></title>
+    <link href="https://learn.uncg.edu/courses/all/assets/css/html5reset.css" rel="stylesheet" type="text/css" media="screen">
+    <style type="text/css">
+        h1, h2 {text-align: center;}
+    </style>
+</head>
+<body>
+    <h1>UNCG Online's Form system is temporarily down for maintenance.</h1>
+</body>
+</html>

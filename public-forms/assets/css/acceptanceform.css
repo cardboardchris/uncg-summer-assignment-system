@@ -1,0 +1,399 @@
+/* radio buttons */
+
+.radio-buttons .help-block {
+    margin-left: 14px;
+}
+
+.student-status-header {
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.employee-status-container {
+    margin-top: 10px;
+}
+
+.employee-status-container p {
+    margin-top: 8px;
+}
+
+.student-status-container .form-group {
+    margin: -8px 0 0 10px;
+    float: left;
+}
+
+.student-status-container .radio-inline {
+    margin-right: 30px;
+}
+
+.course .cell p {
+    text-align: center;
+    padding: 10px 0;
+    margin: 0;
+}
+
+/************ courses table ************/
+
+.courses .new-course:not(:first-child) {
+    display: none;
+}
+
+/* Column height fix */
+
+.row-height {
+    display: table;
+    table-layout: fixed;
+    height: 100%;
+    width: 100%;
+}
+
+.col-height {
+    display: table-cell;
+    float: none;
+    height: 100%;
+    vertical-align: bottom;
+}
+
+/* Course boxes */
+
+.courses-container {
+    border: 2px solid transparent;
+}
+
+.course {
+    margin: 10px 0 0 0;
+}
+
+.courses .row {
+    margin-top: 0;
+}
+
+.course .cell {
+    height: 44px;
+    border-right: 1px solid #444;
+    border-bottom: 1px solid #444;
+    border-left: 1px solid #444;
+    padding: 0 10px;
+}
+
+.course .header-cell {
+    border-top: 1px solid #444;
+    background: #eee;
+}
+
+.course .header-cell.last-cell {
+    height: 44px;
+}
+
+.course .input-cell.full-width-input {
+    padding: 0;
+}
+
+.course .select-cell {
+    height: 44px;
+    padding: 0;
+    /* border-bottom: none; */
+}
+
+.course .select-cell .form-group {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.course select,
+.course select:focus {
+    width: 100%;
+    height: 43px;
+    background: #fff;
+    border-radius: 0;
+}
+
+.course input[type=text] {
+    width: 100%;
+    height: 43px;
+    padding: 0 10px;
+    border: none;
+}
+
+.course .input-cell.minimum-input {
+    padding-top: 0;
+}
+
+.form-control[disabled],
+.form-control[readonly],
+fieldset[disabled] .form-control {
+    background: #fff;
+}
+
+.disabled-overlay {
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background: #EEE;
+}
+
+.disabled-overlay span {
+    display: block;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+::placeholder {
+    color: #CCC;
+    font-size: 16px;
+}
+
+/* header cells */
+
+.course .header-cell {
+    border-top: none;
+    height: 44px;
+    padding: 0 5px;
+}
+
+.course-number .header-cell {
+    border-top: 1px solid #444;
+}
+
+/* Input Cells */
+
+.course .form-group {
+    margin: 0;
+}
+
+.course .input-cell .form-group {
+    /* margin-top: 4px; */
+    text-align: center;
+}
+
+.course .input-cell {
+    border-right: 1px solid #444;
+    border-bottom: 1px solid #444;
+    padding: 0;
+}
+
+.course .input-cell input[type=text] {
+    border-bottom: 2px solid transparent;
+}
+
+.course .input-cell input[type=text]:focus,
+.course .input-cell select:focus {
+    border-bottom: 2px solid #007394;
+    box-shadow: none;
+}
+
+.verified-course .input-cell input[type=text]:focus {
+    border-bottom: 2px solid transparent;
+}
+
+.course .input-cell input[type=radio] {
+    position: relative;
+    top: 5px;
+    left: 5px;
+}
+
+.course .has-error input[type=text],
+.course .has-error select,
+.course .has-error select:focus {
+    height: 43px;
+    border-bottom: 2px solid #C00;
+}
+
+/* Add Course Button */
+
+.add-course-button-container {
+    text-align: center;
+    padding: 0 5px 5px 5px;
+}
+
+.add-course-button,
+.remove-course-button {
+    position: relative;
+    top: 3px;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 0 auto;
+    text-align: center;
+    background: #fff;
+    border: 2px solid #ccc;
+    color: #aaa;
+    cursor: pointer;
+}
+
+.add-course-button:hover,
+.remove-course-button:hover {
+    border-color: #23527c;
+    color: #23527c;
+}
+
+.add-course-button span,
+.remove-course-button span {
+    display: block;
+    position: absolute;
+    top: 40%;
+    left: 53%;
+    font-size: 31px;
+    transform: translate(-50%, -50%);
+}
+
+.remove-course-button span {
+    top: 43%;
+    left: 50%;
+}
+
+.course .course-minimum .cell {
+    height: 44px;
+}
+
+.course-1 .remove-course-button,
+.course-6 .add-course-button {
+    display: none;
+}
+
+/* Extra course rows */
+
+.begin-hidden {
+    display: none;
+}
+
+/* Stipend Pro-rate tables */
+
+.table {
+    margin-top: 20px;
+}
+
+th,
+td {
+    border: 1px solid #949598;
+    text-align: center;
+}
+
+th {
+    background: #B9B4B2;
+    color: #fff;
+    font-weight: bold;
+}
+
+th .subtext {
+    font-weight: normal;
+    ;
+}
+
+.table>tbody>tr>td,
+.table>tbody>tr>th {
+    padding: 4px;
+}
+
+.table > tbody > tr > th.v-centered {
+    vertical-align: middle;
+}
+
+.ugrad-header-row th {
+    background: #007394;
+}
+
+.grad-header-row th {
+    background: #B69E37;
+}
+
+.table-striped > tbody > tr:nth-child(even) > td {
+    background-color: #E2E2E0;
+}
+
+.table-striped > tbody > tr:nth-child(odd) > td {
+    background-color: #fff;
+}
+
+.signature-col input[type=text] {
+    width: 100%;
+    text-align: left;
+    margin: -2px 0 0 0;
+}
+
+.signature-row div {
+    margin-top: 10px;
+}
+
+.contact-container {
+    clear: both;
+}
+
+/* Media queries */
+
+@media screen and (min-width: 768px) {
+    .course .input-cell {
+        border-left: 1px solid #444;
+    }
+    .signature-row div {
+        margin-top: 0;
+    }
+    .signature-row div:first-child p {
+        text-align: right;
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+    .course-number .cell {
+        border-top: none;
+        border-left: 1px solid #444;
+    }
+    .show-headers .header-cell {
+        border-left: none;
+    }
+    .course-1 .header-cell {
+        border-top: 1px solid #444;
+    }
+    .show-headers .first-cell {
+        border-left: 1px solid #444;
+    }
+    .course:not(.show-headers) .header-cell {
+        height: 0;
+        overflow: hidden;
+        border-bottom: none;
+    }
+    .course:first-child .header-cell {
+        height: 44px;
+        border-top: 1px solid #444;
+        border-left: none;
+        border-bottom: 1px solid #444;
+    }
+    .course:first-child .first-cell {
+        border-left: 1px solid #444;
+    }
+    .course .course-accept .header-cell p,
+    .course .course-accept-prorate .header-cell p,
+    .course .course-minimum .header-cell p {
+        font-size: 12px;
+        padding: 5px 0;
+    }
+    .course-accept .header-cell p {
+        margin-top: 8px;
+    }
+    .course .input-cell {
+        border-left: none;
+    }
+    .course .first-cell {
+        border-left: 1px solid #444;
+    }
+    .course-1 .add-course-button-container {
+        margin-top: 48px;
+    }
+    .courses .course:first-child .header-cell {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .course .input-cell {
+        margin-right: 14px;
+    }
+}

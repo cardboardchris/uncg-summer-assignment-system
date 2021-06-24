@@ -1,0 +1,424 @@
+@font-face {
+    font-family: 'Trade Gothic';
+    src: url('../fonts/TradeGothicLTStd-BdCn20.eot');
+    src: url('../fonts/TradeGothicLTStd-BdCn20.eot?#iefix') format('embedded-opentype'), url('../fonts/TradeGothicLTStd-BdCn20.woff2') format('woff2'), url('../fonts/TradeGothicLTStd-BdCn20.woff') format('woff'), url('../fonts/TradeGothicLTStd-BdCn20.svg#TradeGothicLTStd-BdCn20') format('svg');
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: condensed;
+    unicode-range: U+0020-00FE;
+}
+
+
+/*------------------------------------------------------------------------------
+ Form
+------------------------------------------------------------------------------*/
+
+body {
+    font-size: 16px;
+    -webkit-text-stroke: 1px transparent;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+    font-family: 'Trade Gothic', sans-serif;
+    font-size: 27px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    background: #001F58;
+    padding: 10px 8px;
+    border-bottom: 8px solid #FAD447;
+    margin-top: 0;
+}
+
+h1 span {
+    display: inline-block;
+    color: #8EADBC
+}
+
+h2 {
+    font-size: 20px;
+    text-align: center;
+}
+
+hr {
+    border-top-color: #ccc;
+}
+
+.row {
+    clear: both;
+}
+
+.table-row {
+    margin-top: 0;
+}
+
+.help-block {
+    font-size: 14px;
+}
+
+.form-container {
+    background: #FFF;
+}
+
+/* Acceptance form login page */
+
+.acceptance-form-login-container {
+    height: 800px;
+}
+
+.acceptance-form-login-form {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Hidden rows */
+
+.begin-hidden {
+    display: none;
+}
+
+/* Instructions */
+
+.instructions-row p {
+    font-weight: bold;
+}
+
+.instructions-row em {
+    font-weight: normal;
+}
+
+/* Text fields */
+
+.row {
+    margin-top: 10px;
+}
+
+.table-row {
+    margin-top: 0;
+}
+
+.form-control,
+.form-control:focus,
+.has-error .form-control,
+.has-error .form-control:focus,
+.fill-width {
+    height: 27px;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    outline: none;
+}
+
+.has-error .form-control,
+.has-error .form-control:focus {
+    border-bottom: 2px solid #C00;
+}
+
+.has-error select.form-control,
+.has-error select.form-control:focus {
+    border: 2px solid #C00;
+}
+
+.form-group input[type=text],
+.form-group input[type=tel],
+.form-group input[type=email],
+.form-group input[type=radio],
+.form-group input[type=text]:focus,
+.form-group input[type=tel]:focus,
+.form-group input[type=email]:focus,
+.form-group input[type=radio]:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.row input,
+.row .fill-width {
+    display: inline-block;
+    border: none;
+    border-bottom: 1px solid #000;
+    margin-left: 5px;
+    text-align: center;
+}
+
+.table-row input {
+    margin-left: 0;
+}
+
+.row input:focus {
+    outline: none;
+    border-bottom: 2px solid #007394;
+}
+.row .select-cell .has-error select {
+    border: none;
+}
+
+.row .has-error input,
+.row .select-cell .has-error {
+    border: none;
+    border-bottom: 2px solid #C00;
+}
+
+.row .text-col .form-group,
+.row .select-col .form-group {
+    position: relative;
+    display: flex;
+}
+
+.row .text-col .form-group label {
+    flex-grow: 0;
+    white-space: nowrap;
+}
+
+.row .text-col .form-group input[type=text],
+.row .text-col .form-group input[type=number],
+.row .text-col .form-group input[type=tel],
+.row .text-col .form-group input[type=email],
+.row .select-col .form-group .fill-width {
+    flex-grow: 1;
+}
+
+.row .select-col .form-group .fill-width {
+    position: relative;
+}
+
+.cell .form-group {
+    margin: 0;
+}
+
+.text-col .form-group .help-block,
+.radio-col .form-group .help-block,
+.select-col .form-group .help-block {
+    position: absolute;
+    top: 24px;
+    right: 0;
+}
+
+/* Select Fields */
+
+.select-col .form-group .help-block {
+    bottom: -45px;
+}
+
+.select-col select {
+    margin-left: 5px;
+    border: 1px solid rgb(85, 85, 85);
+}
+
+.select-col select:focus {
+    border: 1px solid rgb(85, 85, 85);
+}
+
+.disabled label,
+.disabled .sub-label {
+    color: #AAA;
+}
+
+.disabled input[type=text] {
+    border-bottom: 2px solid #CCC;
+    background-color: #fff;
+}
+
+.sub-label {
+    display: block;
+    float: left;
+    margin: 5px 0 0 5px;
+}
+
+
+/* Radio Buttons */
+
+.radio-col .form-group .help-block {
+    bottom: -28px;
+    left: 25px;
+}
+
+.radio-inline {
+    vertical-align: baseline;
+}
+
+input[type=radio] {
+    position: relative;
+    top: 5px;
+    width: 20px;
+    margin: 0;
+}
+
+.checkbox-inline {
+    padding-left: 0;
+    margin: 0;
+}
+
+.checkbox label, .radio label {
+    padding-left: 5px;
+}
+
+/* Text area */
+
+textarea.full-width {
+    width: 100%;
+}
+
+
+/* Numbered list columns */
+
+.list-row p {
+    position: relative;
+    top: 5px;
+}
+
+/* non-editable table cells */
+
+.course .cell.total-cell input,
+.course .course-hours .cell input {
+    margin-left: 0;
+}
+
+.assignments-info-error {
+    text-align: center;
+    color: #a94442;
+    margin-top: 4px;
+}
+
+/* Comments box */
+
+.comments-row textarea {
+    width: 100%;
+}
+
+/* Submit row */
+
+.submit-row {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.submit-row input[type=text] {
+    border-bottom: 1px solid #000;
+}
+
+.submit-row input[type=text]:focus {
+    border-bottom: 2px solid #007394;
+}
+
+.submit-row .has-error input[type=text] {
+    border-bottom: 2px solid #C00;
+}
+
+.date-cell,
+.signature-cell,
+.submit-cell {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.date-cell {
+    text-align: center;
+}
+
+.submit-row .submit-cell {
+    clear: both;
+}
+
+.error {
+    color: #C00;
+}
+
+.contact,
+.contact-row {
+    border-top: 1px solid #000;
+    margin-top: 20px;
+    padding-top: 20px;
+    font-size: 12px;
+}
+
+.signature-col input[type=text] {
+    width: 100%;
+    text-align: left;
+    margin: -2px 0 0 0;
+}
+
+.signature-row div {
+    margin-top: 10px;
+}
+
+.hide-for-screen {
+    display: none;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 400px) {
+    .employee-status-container {
+        height: 40px;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (min-width: 470px) {
+    .course .cell.total-cell p {
+        margin: 0;
+    }
+    .student-status-container {
+        height: 40px;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .date-cell,
+    .signature-cell,
+    .submit-cell {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .date-cell {
+        text-align: left;
+    }
+    .date-cell p {
+        margin: 5px 0 0 0;
+    }
+    .submit-row .submit-cell {
+        clear: none;
+    }
+    .signature-row div:first-child p {
+        text-align: right;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .bordered {
+        display: flex;
+        flex-wrap: wrap;
+        border-top: 1px solid #ccc;
+        border-left: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+    }
+    .bordered.no-top-border {
+        border-top: none;
+    }
+    .bordered > div {
+        display: flex;
+        flex-direction: column;
+        padding-top: 10px;
+        border-right: 1px solid #ccc;
+    }
+    .student-status-container {
+        height: 24px;
+    }
+
+    .courses-container .row {
+        margin-top: 0;
+    }
+    .course input[type=text] {
+        height: 43px;
+    }
+    .course .cell {
+        border-left: none;
+    }
+    .course .cell.total-cell {
+        background-color: transparent;
+    }
+}

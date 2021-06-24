@@ -1,0 +1,371 @@
+@font-face {
+    font-family: 'Trade Gothic';
+    src: url('../fonts/TradeGothicLTStd-BdCn20.eot');
+    src: url('../fonts/TradeGothicLTStd-BdCn20.eot?#iefix') format('embedded-opentype'), url('../fonts/TradeGothicLTStd-BdCn20.woff2') format('woff2'), url('../fonts/TradeGothicLTStd-BdCn20.woff') format('woff'), url('../fonts/TradeGothicLTStd-BdCn20.svg#TradeGothicLTStd-BdCn20') format('svg');
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: condensed;
+    unicode-range: U+0020-00FE;
+}
+
+body {
+  padding-top: 0;
+}
+
+header {
+  margin-top: 15px;
+}
+
+h1 {
+  font-family: 'Trade Gothic', sans-serif;
+  font-size: 27px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  background: #001F58;
+  padding: 10px 8px;
+  border-bottom: 8px solid #FAD447;
+  margin-bottom: 15px;
+}
+
+h1 span {
+    display: inline-block;
+    color: #8EADBC;
+}
+
+h2 {
+  font-size: 24px;
+  text-align: center;
+}
+
+/* text inputs & selects */
+
+.form-control {
+  text-align: center;
+  border-top: none;
+  border-right: none;
+  border-bottom: 1px solid #333;
+  border-left: none;
+  border-radius: 0;
+  padding: 0 5px;
+  background-color: transparent;
+}
+
+.form-control::placeholder {
+  color: #999;
+}
+
+select {
+  text-align-last: center;
+}
+
+.form-control:invalid {
+  border-bottom: 1px solid #007bff;
+}
+
+.course .form-control:invalid {
+  border-bottom: 2px solid #007bff;
+}
+
+/* validation errors */
+
+.form-error {
+  color: #C00;
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 350px;
+  text-align: center;
+  font-size: 12px;
+}
+
+.form-error-no-assignments {
+  font-size: 14px;
+}
+
+/* checkboxes & radio buttons */
+
+input[type=checkbox] {
+  position: relative;
+  top: 7px;
+}
+
+.form-check {
+  padding-left: 1.5rem;
+}
+
+.form-check label,
+.form-check input {
+  cursor: pointer;
+}
+
+.form-check .form-check-label {
+  position: relative;
+  top: 8px;
+  margin-left: 4px;
+}
+
+.form-check-inline .form-check-input {
+  margin: 0;
+}
+
+.form-check-inline .form-check-label {
+  margin: 0;
+  padding-left: 8px;
+}
+
+.form-check-inline .form-check-label {
+  position: relative;
+  top: 3px;
+}
+
+/****** courses table ******/
+
+.courses-container {
+  position: relative;
+}
+
+/* borders */
+
+.course .col-6,
+.total-row .col {
+  border-top: 1px solid #333;
+  border-right: 1px solid #333;
+  padding: 0;
+}
+
+.course-term,
+.total-row .text-cell {
+  border-left: 1px solid #333;
+}
+
+.course-6 {
+  border-bottom: 1px solid #333;
+}
+
+/* inputs */
+
+.course .form-control {
+  height: 2.25rem;
+  border-top: 2px solid transparent;
+  border-right: none;
+  border-bottom: 2px solid transparent;
+  border-left: none;
+}
+
+.total-row .form-control:disabled {
+  background: transparent;
+}
+
+/* comments */
+
+.comments-row {
+  margin-top: 25px;
+}
+
+textarea {
+  width: 100%;
+}
+
+.course-note-print {
+  margin: 5px 0 0 0;
+}
+
+/* contact */
+
+.contact-container {
+  border-top: 1px solid #666;
+  padding-top: 15px;
+  margin-top: 20px;
+}
+
+/* session totals */
+
+.session-total .form-control {
+  border: none;
+}
+
+/***** utility *****/
+
+.hide-for-screen,
+.begin-hidden {
+  display: none;
+}
+
+.validation-ok-border {
+  border: 2px solid transparent;
+}
+
+.validation-error-border {
+  border: 2px solid #C00;
+}
+
+/***** State-based styles *****/
+
+.form-g-success input:disabled,
+.form-g-print input:disabled {
+  background: transparent;
+}
+
+.form-g-success .form-control::placeholder,
+.form-g-print .form-control::placeholder {
+  opacity: 0;
+}
+
+/****** Media queries ******/
+
+@media (min-width: 786px) {
+
+  /***** course table *****/
+
+  .courses-container {
+    padding: 0 5px;
+    /* margin: 0 5px; */
+  }
+
+  .header-cell {
+    display: none;
+  }
+
+  .course:nth-child(2) .header-cell,
+  .course:nth-child(6) .header-cell {
+    display: block;
+  }
+
+  /* headers */
+
+  .header-cell {
+    height: 42px;
+    background: #eee;
+  }
+
+  .header-cell p {
+    position: relative;
+    top: 50%;
+    text-align: center;
+    font-size: 12px;
+    margin: 0;
+    transform: translateY(-50%);
+  }
+
+  .course-credits .header-cell p,
+  .course-hours .header-cell p,
+  .course-stipend .header-cell p {
+    line-height: 13px;
+  }
+
+  /* column widths */
+
+  .course-term {
+    flex: 0 0 40px;
+  }
+
+  .course-credits {
+    flex: 0 0 45px;
+  }
+
+  .course-crn,
+  .course-hours {
+    flex: 0 0 60px;
+  }
+
+  .course-section {
+    flex: 0 0 50px;
+  }
+
+  .course-campus,
+  .course-subject,
+  .course-number {
+    flex: 0 0 55px;
+  }
+
+  .course-stipend,
+  .session-total {
+    flex: 0 0 70px;
+  }
+
+  .course-position {
+    flex: 1 0 180px;
+  }
+
+  /* session totals */
+
+  .total-row.justify-content-start .text-cell {
+    background: #eee;
+  }
+
+  .total-row p {
+    position: relative;
+    top: 50%;
+    text-align: right;
+    padding: 0 5px;
+    margin: 0;
+    transform: translateY(-50%);
+  }
+}
+
+@media (min-width: 992px) {
+
+  /* headers */
+
+  .course-credits .header-cell p,
+  .course-hours .header-cell p,
+  .course-stipend .header-cell p {
+    font-size: 12px;
+    line-height: 13px;
+  }
+
+  /* column widths */
+
+  .course-term {
+      flex: 0 0 50px;
+  }
+  .course-campus,
+  .course-crn,
+  .course-subject,
+  .course-number,
+  .course-section,
+  .course-credits,
+  .course-hours {
+      flex: 0 0 65px;
+  }
+
+  .course-stipend,
+  .session-total {
+      flex: 0 0 100px;
+  }
+
+  .course-position {
+      flex: 1 0 220px;
+  }
+
+}
+
+@media (min-width: 1200px) {
+
+  /***** course table *****/
+
+  /* column widths */
+
+  .course-term {
+      flex: 0 0 50px;
+  }
+  .course-crn,
+  .course-subject,
+  .course-number,
+  .course-section,
+  .course-campus,
+  .course-credits,
+  .course-hours {
+      flex: 0 0 70px;
+  }
+  .course-stipend,
+  .session-total {
+      flex: 0 0 120px;
+  }
+  .course-position {
+      flex: 1 0 220px;
+  }
+
+}

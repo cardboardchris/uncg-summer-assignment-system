@@ -1,0 +1,302 @@
+h1 {
+  background: transparent;
+  border: none;
+  color: #333;
+  font-size: 24px;
+  border-bottom: 1px solid #333;
+}
+
+h1 span {
+  color: #333;
+}
+
+hr {
+  clear: both;
+}
+
+/* general form elements */
+
+select.form-control {
+  border: none;
+}
+
+select.hide-options-for-print {
+  opacity: 0;
+}
+
+.select-wrapper {
+  position: relative;
+  top: -1px;
+  border-bottom: 1px solid #333;
+}
+
+.form-group {
+  margin-bottom: 0;
+}
+
+/* show hidden elements */
+
+.collapse:not(.show) {
+  display: flex;
+  flex-grow: 1;
+}
+
+/* hide placeholders */
+::-webkit-input-placeholder { /* WebKit browsers */
+    color: transparent !important;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color: transparent !important;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color: transparent !important;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+   color: transparent !important;
+}
+.form-control::-webkit-input-placeholder {
+  color: transparent !important;
+}
+.form-control:-moz-placeholder { /* Mozilla Firefox 19+ */
+   color: transparent !important;
+}
+.form-control::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color: transparent !important;
+}
+.form-control:-ms-input-placeholder {
+  color: transparent !important;
+}
+.form-control::placeholder {
+  color: transparent !important;
+}
+
+/* instructions */
+
+.instructions-row p {
+  margin-bottom: 0;
+  color: #888;
+}
+
+/* new employee info */
+
+.new-employee-info-container {
+  flex-wrap: wrap;
+}
+
+.new-employee-address-container {
+  flex: 0 0 100%;
+}
+
+/* citizenship & visa */
+
+.new-employee-citizenship-container {
+  display: flex;
+  flex: 0 0 100%;
+}
+
+.new-employee-citizenship {
+  flex: 1 0 33%;
+  max-width: 33%;
+}
+
+.new-employee-citizenship .col-md-8 {
+  flex: 1 0 100%;
+  max-width: 100%;
+}
+
+.new-employee-visa {
+  flex: 1 0 67%;
+  max-width: 67%;
+  margin-left: 1.7%;
+}
+
+.new-employee-visa .col-md-8,
+.new-employee-visa .col-md {
+  flex: 1 0 49%;
+  max-width: 49%;
+}
+
+.new-employee-visa .col-md {
+  margin-left: 2%;
+}
+
+/* employee details */
+
+.form-check-inline .form-check-input {
+  position: relative;
+  top: -2px;
+}
+
+.form-check-inline .form-check-label {
+  top: 0;
+}
+
+.uncg-employee-details-container {
+  display: flex;
+}
+
+.employee-status {
+  flex: 0 0 30%;
+  margin-right: 2%;
+}
+
+.employee-status .col-md-6 {
+  flex: 0 0 49%;
+}
+
+.employee-type {
+  flex: 0 0 32%;
+  margin-right: 2%;
+}
+
+.employee-type .col-md-6 {
+  flex: 0 0 42%;
+}
+
+.employee-time {
+  flex: 0 0 36%;
+}
+
+.employee-time .col-md-6 {
+  flex: 0 0 39%;
+}
+
+.employee-status .col-md,
+.employee-type .col-md,
+.employee-time .col-md {
+  margin: 0;
+}
+
+.employee-salary,
+.employee-eclass {
+  flex: 0 0 50%;
+}
+
+.employee-salary {
+  margin-right: 1.5%;
+}
+
+.employee-salary .col-md-6 {
+  flex: 0 0 40%;
+}
+
+.employee-eclass .col-md-6 {
+  flex: 0 0 30%;
+}
+
+.employee-eclass label {
+  text-align: right;
+  margin-right: 5px;
+}
+
+/* student details */
+
+.uncg-student-details-container {
+  display: flex;
+}
+
+.student-status {
+  flex: 0 0 28%;
+  margin-right: 2%;
+}
+
+.student-status .col-md-6 {
+  flex: 0 0 45%;
+}
+
+.student-type {
+  flex: 0 0 38%;
+  margin-right: 2%;
+}
+
+.student-type .col-md-6 {
+  flex: 0 0 43%;
+}
+
+.student-time {
+  flex: 0 0 34%;
+}
+
+.student-time .col-md-6 {
+  flex: 0 0 45%;
+}
+
+.student-eclass {
+  flex: 0 0 30%;
+  margin-right: 2%;
+}
+
+.student-eclass label {
+  flex: 0 0 30%;
+}
+
+.student-grad-date .form-group .col {
+  width: 150px;
+}
+
+.student-grad-date label {
+  text-align: right;
+  margin-right: 5px;
+}
+
+.form-g-new .employee-eclass select {
+  opacity: 0;
+}
+
+/* courses table */
+
+.course .form-control,
+.total-row .col {
+  height: 30px;
+}
+
+.total-row p {
+  font-size: 14px;
+}
+
+.total-row .form-control {
+  height: 30px;
+}
+
+.course-note textarea {
+  width: 100%;
+}
+
+/* comments */
+
+.comments-row .col-form-label {
+  padding: 2px;
+}
+
+/* footer */
+
+.contact-container {
+  padding-top: 5px;
+}
+
+.contact-container .col-md {
+  flex: 0 0 100%;
+}
+
+.contact-container .col-md p {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+/* utility */
+
+.hide-for-print {
+  display: none;
+}
+
+.transparent {
+  opacity: 0;
+}
+
+div.hide-for-screen {
+  display: block;
+}
+
+span.hide-for-screen {
+  display: inline;
+}

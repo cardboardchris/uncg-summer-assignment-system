@@ -1,0 +1,253 @@
+@charset "UTF-8";
+
+/*------------------------------------------------------------------------------
+Elements
+------------------------------------------------------------------------------*/
+
+body {
+  background-color: #fff;
+  font: 16px/24px normal Helvetica, Arial, sans-serif;
+  color: #4F5155;
+  padding-top: 56px;
+  -webkit-text-stroke: 1px transparent;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: #003399;
+  background-color: transparent;
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+code {
+  font-family: Consolas, Monaco, Courier New, Courier, monospace;
+  font-size: 12px;
+  background-color: #f9f9f9;
+  border: 1px solid #D0D0D0;
+  color: #002166;
+  display: block;
+  margin: 14px 0 14px 0;
+  padding: 12px 10px 12px 10px;
+}
+
+.footer {
+  text-align: right;
+  font-size: 11px;
+  border-top: 1px solid #D0D0D0;
+  line-height: 32px;
+  padding: 0 10px 0 10px;
+  margin: 20px 0 0 0;
+}
+
+.alert {
+  margin-top: 15px;
+}
+
+.error {
+  padding-left: 0;
+}
+
+.error p {
+  color: #C00;
+  margin: 3px 0;
+}
+
+section {
+  max-width: 600px;
+  margin-top: 25px;
+}
+
+.text-field textarea {
+  height: 100px;
+  border: 1px solid #CCC;
+}
+
+.buttons-col input[type=submit].btn-block {
+  float: left;
+  width: 69%;
+}
+
+.buttons-col .btn-default {
+  float: right;
+  width: 29%;
+}
+
+.hidden {
+  display: none;
+}
+
+small {
+  color: #999;
+}
+
+.navbar-brand {
+  padding-right: 5px;
+}
+
+.navbar-header a {
+  font-size: 18px;
+  color: #9d9d9d;
+  padding: 15px 0;
+}
+
+.dashboard-header-row {
+  padding: 15px 0;
+}
+
+.download-heading {
+  position: relative;
+  font-size: 16px;
+  top: 3px;
+}
+
+.table {
+  margin-top: 10px;
+}
+
+.table td,
+.table th {
+  border: 1px solid #ddd;
+}
+
+.table .checkbox-col {
+  width: 60px;
+  padding-top: 5px;
+}
+
+.table .checkbox-inline {
+  padding-left: 3px;
+}
+
+.bulk-actions .checkbox-col {
+  padding-top: 0;
+}
+
+.user-info {
+  color: #aaa;
+}
+
+.header-row {
+  height: 28px;
+  font-weight: bold;
+  border-bottom: 2px solid #DDD;
+  margin-bottom: 10px;
+}
+
+.cell-data {
+  display: block;
+}
+
+.received-date {
+  white-space: nowrap;
+}
+
+.declined {
+  color: #C00;
+}
+
+.table>tbody>tr>td {
+  vertical-align: middle;
+}
+
+.bordered {
+  border: 1px solid #000;
+  padding: 10px 0;
+}
+
+.comments-row {
+  margin-top: 20px;
+}
+
+.header-buttons button,
+.header-buttons a {
+  position: relative;
+}
+
+/* Home directory page */
+
+.directory-container {
+  margin-top: 15px;
+}
+
+/* Edit Stipend Rates page */
+
+.settings-form {
+  font-size: 16px;
+}
+
+.settings-form .row {
+  margin-top: 20px;
+}
+
+.settings-form input[type=text] {
+  width: calc(100% - 11px);
+  margin-left: 2px;
+}
+
+/* Settings pages */
+
+.settings-container h3,
+.settings-container h4 {
+  text-align: center;
+}
+
+.settings-form .multiplier input[type=text] {
+  width: 2em;
+  text-align: center;
+}
+
+/* Edit user page */
+
+.user-edit-form .checkbox input[type="checkbox"] {
+  opacity: 1;
+}
+
+.user-edit-form .checkbox label:before {
+  display: none;
+}
+
+/* Archive Bulk actions row */
+
+.bulk-actions {
+  margin: 0;
+}
+
+.centered {
+  text-align: center;
+}
+
+.background-info {
+  background-color: #D9EDF8;
+}
+
+.background-warning {
+  background-color: #FDF7E2;
+}
+
+.danger {
+  color: #D44333;
+}
+
+@media (max-width: 768px) {
+  .align-right {
+      text-align: left;
+  }
+}
+
+/*------------------------------------------------------------------------------
+Auditor Dashboard
+------------------------------------------------------------------------------*/
+
+.auditor-record {
+  margin: 0;
+}
